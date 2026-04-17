@@ -9,7 +9,7 @@ const Banner = () => {
                     relationships that matter most.
                 </p>
                 <button className="mt-4 px-4 py-2 bg-[#244D3F] text-white rounded-md hover:bg-[#1b3a2f] transition">
-                    + Go Back Home
+                    + Add A Friend
                 </button>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-8'>
