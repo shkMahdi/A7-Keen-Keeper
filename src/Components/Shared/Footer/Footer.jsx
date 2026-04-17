@@ -1,6 +1,6 @@
-import insta from '../../assets/instagram.png'
-import facebook from '../../assets/facebook.png'
-import x from '../../assets/twitter.png'
+import insta from '../../../assets/instagram.png'
+import facebook from '../../../assets/facebook.png'
+import x from '../../../assets/twitter.png'
 const Footer = () => {
     return (
         <div className='bg-[#244D3F]'>
