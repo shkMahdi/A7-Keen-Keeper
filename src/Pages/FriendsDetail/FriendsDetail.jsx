@@ -1,10 +1,13 @@
 import { useLoaderData, useParams } from "react-router";
 import { FiClock, FiArchive, FiTrash2, FiPhone, FiMessageSquare, FiVideo } from "react-icons/fi";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { FriendContext } from "../../Context/friendContext";
 
 const FriendsDetail = () => {
     const friends = useLoaderData();
     const { id } = useParams();
+
+    const {handleInteractions} = useContext(FriendContext);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -109,17 +112,17 @@ const FriendsDetail = () => {
                     <h3 className="font-semibold text-lg mb-4">Quick Check-In</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <button className="flex flex-col items-center justify-center border rounded-lg py-6 hover:bg-gray-100">
+                        <button onClick={() => handleInteractions("Call", friend, new Date())} className="flex flex-col items-center justify-center border rounded-lg py-6 hover:bg-gray-100">
                             <FiPhone size={20} />
                             <span className="mt-2 text-sm">Call</span>
                         </button>
 
-                        <button className="flex flex-col items-center justify-center border rounded-lg py-6 hover:bg-gray-100">
+                        <button onClick={() => handleInteractions("Text", friend, new Date())} className="flex flex-col items-center justify-center border rounded-lg py-6 hover:bg-gray-100">
                             <FiMessageSquare size={20} />
                             <span className="mt-2 text-sm">Text</span>
                         </button>
 
-                        <button className="flex flex-col items-center justify-center border rounded-lg py-6 hover:bg-gray-100">
+                        <button onClick={() => handleInteractions("Video-call", friend, new Date())} className="flex flex-col items-center justify-center border rounded-lg py-6 hover:bg-gray-100">
                             <FiVideo size={20} />
                             <span className="mt-2 text-sm">Video</span>
                         </button>
