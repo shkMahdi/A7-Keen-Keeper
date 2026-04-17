@@ -1,9 +1,9 @@
-import React from 'react';
+import Banner from '../../Components/HomePageComponents/Banner/Banner';
 
 const Homepage = () => {
     return (
         <div>
-            homepage
+            <Banner></Banner>
         </div>
     );
 };
