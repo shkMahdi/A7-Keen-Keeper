@@ -14,9 +14,9 @@ const Banner = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-8'>
                 <SummaryCard stat={"10"} title={"Totol Friends"}></SummaryCard>
-                <SummaryCard stat={"10"} title={"On Track"}></SummaryCard>
-                <SummaryCard stat={"10"} title={"Need Attention"}></SummaryCard>
-                <SummaryCard stat={"10"} title={"Interactions This Month"}></SummaryCard>
+                <SummaryCard stat={"3"} title={"On Track"}></SummaryCard>
+                <SummaryCard stat={"6"} title={"Need Attention"}></SummaryCard>
+                <SummaryCard stat={"12"} title={"Interactions This Month"}></SummaryCard>
                 
             </div>
         </div>
